@@ -1,3 +1,3 @@
-# sandboxels-ts-annotations
+# Sandboxels types
 
 Unfinished typescript annotations for sandboxels
