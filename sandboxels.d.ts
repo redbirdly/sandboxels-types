@@ -1,3 +1,5 @@
+// Sandboxels.d.ts
+
 declare class Pixel {
 	constructor(x: number, y: number, element: string)
 
@@ -18,6 +20,8 @@ declare function runAfterLoad(func: () => void): void
 
 declare function runAfterReset(callback: () => void): void
 
+declare function runAfterAutogen(callback: () => void): void
+
 declare function runEveryTick(callback: () => void): void
 
 declare function renderPrePixel(callback: (ctx: CanvasRenderingContext2D) => void): void
@@ -31,6 +35,7 @@ declare function hexToRGB(hex: string): { r: number, g: number, b: number }
 declare let pixelMap: Pixel[][]
 declare let currentPixels: Pixel[]
 declare let pixelSize: number
+declare let maxPixelCount: number
 declare let width: number
 declare let height: number
 declare let mouseType: "left" | "middle" | "right"
@@ -42,6 +47,7 @@ declare let currentElement: string
 declare let prevElement: string
 declare let enabledMods: string[]
 declare let canvas: HTMLCanvasElement
+declare let gameCanvas: HTMLCanvasElement
 declare let pixelTicks: number
 declare let showingMenu: string | false
 
